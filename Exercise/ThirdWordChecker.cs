@@ -27,8 +27,8 @@ class ThirdWordChecker
             {
                 _ui.Print("För få ord i meningen. Försök igen med minst 3 ord.");
             }
-          
-    
+
+            //Console.WriteLine(2);
         }
 
     }
