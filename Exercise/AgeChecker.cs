@@ -1,7 +1,9 @@
-﻿using Exercise.UI;
+﻿using Exercise;
+using Exercise.UI;
 class AgeChecker
 {
     private static ConsoleUI _ui = new();
+    public ExerciseType exerciseType;
     public static void CheckAge()
     {
         _ui.Print("Ange ålder:");
@@ -17,15 +19,15 @@ class AgeChecker
             }
             else if (age < 20)
             {
-                _ui.Print("Ungdomspris: 80kr");
+                _ui.Print($"{ExerciseType.UngdomsPris} : 80kr");
             }
             else if (age > 64)
             {
-                _ui.Print("Pensionärspris: 90kr");
+                _ui.Print($"{ExerciseType.PensionerPris}  : 90kr");
             }
             else
             {
-                _ui.Print("Standardpris: 120kr");
+                _ui.Print($"{ExerciseType.Standardpris} : 120kr");
             }
         }
         else

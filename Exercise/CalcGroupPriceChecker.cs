@@ -1,9 +1,11 @@
 ﻿
+using Exercise;
 using Exercise.UI;
 
 class CalcGroupPriceChecker
 {
     private static ConsoleUI _ui = new();
+
     public static void CalculatGroupPrice()
     {
 
@@ -58,3 +60,4 @@ class CalcGroupPriceChecker
 
     }
 }
+
